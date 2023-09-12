@@ -1,0 +1,41 @@
+{
+  "name": "lumosjs",
+  "description": "nodejs framework",
+  "imports": {
+    "#service/*": "./app/services/*.js",
+    "#controller/*": "./app/controllers/*.js",
+    "#middleware/*": "./app/middlewares/*.js",
+    "#model/*": "./app/models/*.js",
+    "#server/*": "./lib/core/*.js",
+    "#routes/*": "./routes/*.js",
+    "#routeGroup": "./lib/utils/routeGroup.js",
+    "#core": "./lib/core/handlers.js",
+    "#core/*": "./lib/core/*.js",
+    "#utils/*": "./lib/utils/*.js",
+    "#status": "./lib/core/statusCode.js",
+    "#validation/*": "./lib/utils/validation/*.js",
+    "#helpers/*": "./lib/helpers/*.js",
+    "#header/*": "./lib/core/*.js",
+    "#app": "./lib/index.js",
+    "#config/*": "./config/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lumosjs/lumos"
+  },
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "author": "Vicente Victor Sombo",
+  "license": "MIT",
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "cookie": "^0.5.0",
+    "dotenv": "^16.3.1",
+    "sinon": "^15.2.0",
+    "winston": "^3.10.0"
+  }
+}
